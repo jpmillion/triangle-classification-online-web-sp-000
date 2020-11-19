@@ -10,7 +10,7 @@ class Triangle
   end
   
   def kind
-    if @tri.any? {|side| side <= 0} || @tri[0] + @tri[1] < @tri[2]
+    if @tri.any? {|side| side <= 0} || @tri[0] + @tri[1] <= @tri[2]
       raise TriangleError
     else
       #binding.pry
